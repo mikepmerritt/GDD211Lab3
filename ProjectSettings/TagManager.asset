@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerLaser
   - EnemyLaser
+  - Spacerock
   layers:
   - Default
   - TransparentFX

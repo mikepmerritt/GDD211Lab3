@@ -35,7 +35,7 @@ public abstract class CollidableItem : MonoBehaviour
     }
 
     // check for collisions
-    private void OnTriggerEnter2D(Collider2D collision)
+    public virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {

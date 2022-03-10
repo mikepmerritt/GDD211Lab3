@@ -23,4 +23,13 @@ public class EnemyLaser : CollidableItem
             Destroy(this.gameObject);
         }
     }
+
+    public override void OnTriggerEnter2D(Collider2D collision)
+    {
+        base.OnTriggerEnter2D(collision);
+        if(collision.gameObject.CompareTag("Spacerock"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
